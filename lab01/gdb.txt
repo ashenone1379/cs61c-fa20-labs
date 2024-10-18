@@ -1,9 +1,9 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1. set args <arg1> <arg2> ...
+2. b <line number>
+3. n
+4. s
+5. c
+6. p <val name/expression>
+7. display <val name>
+8. info local
+9. q
