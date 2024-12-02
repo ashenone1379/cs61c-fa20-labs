@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 set(CMAKE_C_STANDARD 99)
 
-project(cs61-fa20-labs)
+project(cs61c-lab01)
 
 add_executable(eccentric eccentric.c)
 add_executable(interactive_hello interactive_hello.c)

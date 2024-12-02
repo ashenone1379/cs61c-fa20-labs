@@ -5,23 +5,24 @@
 // Assume 0 <= n <= 31
 unsigned get_bit(unsigned x,
                  unsigned n) {
-    // YOUR CODE HERE
+    return (x >> n) & 0x1;
     // Returning -1 is a placeholder (it makes
     // no sense, because get_bit only returns 
     // 0 or 1)
-    return -1;
 }
+
 // Set the nth bit of the value of x to v.
 // Assume 0 <= n <= 31, and v is 0 or 1
-void set_bit(unsigned * x,
+void set_bit(unsigned *x,
              unsigned n,
              unsigned v) {
-    // YOUR CODE HERE
+    *x = (*x & ~(0x1 << n)) | (v << n);
 }
+
 // Flip the nth bit of the value of x.
 // Assume 0 <= n <= 31
-void flip_bit(unsigned * x,
+void flip_bit(unsigned *x,
               unsigned n) {
-    // YOUR CODE HERE
+    *x = *x ^ (0x1 << n);
 }
 
