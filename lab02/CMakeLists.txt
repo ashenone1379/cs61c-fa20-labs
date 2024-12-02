@@ -9,3 +9,9 @@ add_executable(test_bit_ops
         bit_ops.c
         bit_ops.h
 )
+
+add_executable(vector_test
+        vector-test.c
+        vector.c
+        vector.h
+)
